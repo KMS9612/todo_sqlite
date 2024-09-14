@@ -13,7 +13,7 @@ const addTodos = async (task: string) => {
     return;
   }
 
-  const response = await fetch("/api/todos", {
+  await fetch("/api/todos", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
